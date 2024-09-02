@@ -120,3 +120,11 @@ body {
     color: #181818;
   }
 }
+
+.fa-caret-left {
+  color: white;
+  font-size: 6rem;
+  position: absolute;
+  top: 5%;
+  left: 5%;
+}
