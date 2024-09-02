@@ -20,6 +20,17 @@ main {
   background-size: cover;
 }
 
+a {
+  text-decoration: none;
+  position: relative;
+  display: grid;
+  grid-area: 1 / -1;
+}
+
+div {
+  position: relative;
+}
+
 .solar {
   all: unset;
   container-type: inline-size;
@@ -38,8 +49,8 @@ main {
 div:not(.sun) {
   width: var(--width, 300px);
   aspect-ratio: 1;
-  display: grid;
-  grid-area: 1 / -1;
+  /* display: grid;
+  grid-area: 1 / -1; */
   border: 0.1cqi dashed hsl(0, 0%, 100%);
   border-radius: 50%;
 }
@@ -58,10 +69,13 @@ div:not(.sun)::after {
   display: block;
 }
 
+div:not(.sun):hover::after {
+  animation-play-state: paused;
+}
+
 .sun {
   height: 5cqmin;
   aspect-ratio: 1;
-  /* background-color: hsl(50, 100%, 50%); */
   background-image: url(https://www.solarsystemscope.com/textures/download/8k_sun.jpg);
   background-size: cover;
   border-radius: 50%;
@@ -78,6 +92,7 @@ div:not(.sun)::after {
 /* 60km = 20cqi */
 
 .mercury {
+  z-index: 100;
   --width: 9.125cqmin;
   --duration: 5s;
   --diameter: 1.5cqi;
@@ -85,6 +100,7 @@ div:not(.sun)::after {
   --planet-image: url(https://www.solarsystemscope.com/textures/download/8k_mercury.jpg);
 }
 .venus {
+  z-index: 90;
   --width: 14.06cqmin;
   --duration: 3s;
   --diameter: 2cqi;
@@ -93,6 +109,7 @@ div:not(.sun)::after {
 }
 
 .earth {
+  z-index: 80;
   --width: 20.33cqmin;
   --duration: 10s;
   --diameter: 3cqi;
@@ -101,6 +118,7 @@ div:not(.sun)::after {
 }
 
 .mars {
+  z-index: 70;
   --width: 28cqmin;
   --duration: 7s;
   --diameter: 2cqi;
@@ -109,6 +127,7 @@ div:not(.sun)::after {
 }
 
 .jupiter {
+  z-index: 60;
   --width: 40cqmin;
   --duration: 15s;
   --diameter: 4.5cqi;
@@ -117,6 +136,7 @@ div:not(.sun)::after {
 }
 
 .saturn {
+  z-index: 50;
   --width: 52cqmin;
   --duration: 20s;
   --diameter: 4cqi;
@@ -125,6 +145,7 @@ div:not(.sun)::after {
 }
 
 .uranus {
+  z-index: 40;
   --width: 60cqmin;
   --duration: 12s;
   --diameter: 3cqi;
@@ -133,6 +154,7 @@ div:not(.sun)::after {
 }
 
 .neptune {
+  z-index: 30;
   --width: 67cqmin;
   --duration: 13s;
   --diameter: 3cqi;
@@ -141,6 +163,7 @@ div:not(.sun)::after {
 }
 
 .pluto {
+  z-index: 20;
   --width: 75cqmin;
   --duration: 10s;
   --diameter: 2cqi;
