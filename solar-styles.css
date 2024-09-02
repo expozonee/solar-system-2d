@@ -73,6 +73,23 @@ div:not(.sun):hover::after {
   animation-play-state: paused;
 }
 
+a:hover::before {
+  content: attr(planet-name);
+  position: absolute;
+  z-index: 1000;
+  top: 100%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: hsl(0, 0%, 100%);
+  color: hsl(0, 0%, 0%);
+  padding: 0.5rem;
+  border-radius: 0.5rem;
+  box-shadow: 0 0 0.5rem hsl(0, 0%, 100%);
+  font-size: 1rem;
+  font-family: "Poppins", sans-serif;
+  font-weight: 800;
+}
+
 .sun {
   height: 5cqmin;
   aspect-ratio: 1;
