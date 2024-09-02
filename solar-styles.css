@@ -124,6 +124,7 @@ div:not(.sun):hover::after {
   --diameter: 2cqi;
   --planet-color: hsl(0, 100%, 50%);
   --planet-image: url(https://www.solarsystemscope.com/textures/download/2k_mars.jpg);
+  cursor: pointer;
 }
 
 .jupiter {
