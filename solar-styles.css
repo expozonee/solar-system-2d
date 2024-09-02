@@ -30,7 +30,7 @@ main {
   width: 100%;
   height: 100%;
   max-width: 1600px;
-  max-height: 1600px;
+  max-height: 1200px;
   margin-inline: auto;
 }
 
@@ -59,7 +59,7 @@ div:not(.sun)::after {
 }
 
 .sun {
-  height: 5cqi;
+  height: 5cqmin;
   aspect-ratio: 1;
   /* background-color: hsl(50, 100%, 50%); */
   background-image: url(https://www.solarsystemscope.com/textures/download/8k_sun.jpg);
@@ -78,14 +78,14 @@ div:not(.sun)::after {
 /* 60km = 20cqi */
 
 .mercury {
-  --width: 9.125cqi;
+  --width: 9.125cqmin;
   --duration: 5s;
   --diameter: 1.5cqi;
   --planet-color: green;
   --planet-image: url(https://www.solarsystemscope.com/textures/download/8k_mercury.jpg);
 }
 .venus {
-  --width: 14.06cqi;
+  --width: 14.06cqmin;
   --duration: 3s;
   --diameter: 2cqi;
   --planet-color: hsl(40, 100%, 50%);
@@ -93,7 +93,7 @@ div:not(.sun)::after {
 }
 
 .earth {
-  --width: 20.33cqi;
+  --width: 20.33cqmin;
   --duration: 10s;
   --diameter: 3cqi;
   --planet-color: hsl(190, 100%, 50%);
@@ -101,7 +101,7 @@ div:not(.sun)::after {
 }
 
 .mars {
-  --width: 28cqi;
+  --width: 28cqmin;
   --duration: 7s;
   --diameter: 2cqi;
   --planet-color: hsl(0, 100%, 50%);
@@ -109,7 +109,7 @@ div:not(.sun)::after {
 }
 
 .jupiter {
-  --width: 40cqi;
+  --width: 40cqmin;
   --duration: 15s;
   --diameter: 4.5cqi;
   --planet-color: hsl(40, 100%, 50%);
@@ -117,7 +117,7 @@ div:not(.sun)::after {
 }
 
 .saturn {
-  --width: 52cqi;
+  --width: 52cqmin;
   --duration: 20s;
   --diameter: 4cqi;
   --planet-color: hsl(295, 51%, 36%);
@@ -125,7 +125,7 @@ div:not(.sun)::after {
 }
 
 .uranus {
-  --width: 60cqi;
+  --width: 60cqmin;
   --duration: 12s;
   --diameter: 3cqi;
   --planet-color: hsl(180, 100%, 50%);
@@ -133,7 +133,7 @@ div:not(.sun)::after {
 }
 
 .neptune {
-  --width: 67cqi;
+  --width: 67cqmin;
   --duration: 13s;
   --diameter: 3cqi;
   --planet-color: hsl(220, 100%, 50%);
@@ -141,7 +141,7 @@ div:not(.sun)::after {
 }
 
 .pluto {
-  --width: 75cqi;
+  --width: 75cqmin;
   --duration: 10s;
   --diameter: 2cqi;
   --planet-color: hsl(0, 0%, 100%);
